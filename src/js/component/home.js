@@ -54,7 +54,7 @@ export function NavBar() {
 export function JumboTron() {
 	return (
 		<div className="jumbotron">
-			<h1 className="display-4">A Warm Welcome!</h1>
+			<h1 className="display-4 mt-4">A Warm Welcome!</h1>
 			<p className="lead">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
 				mattis tempus risus sed aliquet. Sed volutpat magna lacus. Nulla
@@ -70,19 +70,14 @@ export function JumboTron() {
 
 export function Cards(props) {
 	return (
-		<div className="card" style={{ width: "18rem" }}>
+		<div className="card text-center" style={{ width: "18rem" }}>
 			<img src={props.imagen} className="card-img-top" alt="..." />
 			<div className="card-body">
 				<h5 className="card-title">Card title</h5>
 				<p className="card-text">{props.texto}</p>
 			</div>
-			<div
-				className="card-footer"
-				style={{ justifyContent: "center", alignItems: "center" }}>
-				<a
-					href="#"
-					className="btn btn-primary"
-					style={{ justifyContent: "center" }}>
+			<div className="card-footer" style={{ backgroundColor: "white" }}>
+				<a href="#" className="btn btn-primary">
 					Find Out More!
 				</a>
 			</div>
